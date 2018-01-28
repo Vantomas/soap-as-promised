@@ -1,6 +1,6 @@
 'use strict';
 
-const soap = require('soap');
+const soap = require('strong-soap').soap;
 
 function cb2promise(fn, bind, position) {
   if (fn._promisified === true) {
